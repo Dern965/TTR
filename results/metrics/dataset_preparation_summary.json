@@ -1,0 +1,10 @@
+{
+  "prepared_images": 84860,
+  "class_counts": {
+    "open": 42916,
+    "closed": 41944
+  },
+  "image_width": 64,
+  "image_height": 64,
+  "normalization": "Las imágenes se guardan en uint8; la normalización está incluida dentro de cada modelo para mantener el mismo preprocesamiento en entrenamiento e inferencia."
+}

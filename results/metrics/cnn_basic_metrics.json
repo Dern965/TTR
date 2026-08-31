@@ -1,0 +1,14 @@
+{
+  "model": "cnn_basic",
+  "model_path": "C:\\Users\\dern9\\Desktop\\ttr_somnolencia\\models\\cnn_basic.keras",
+  "accuracy": 0.9454148471615721,
+  "precision": 0.9945619335347432,
+  "recall": 0.9066016208985758,
+  "f1": 0.9485469663291347,
+  "test_samples": 22900,
+  "positive_class": "open",
+  "class_names": [
+    "closed",
+    "open"
+  ]
+}

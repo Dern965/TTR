@@ -1,0 +1,65 @@
+dataset:
+  raw_path: "data/raw"
+  processed_path: "data/processed"
+  image_width: 64
+  image_height: 64
+  allowed_extensions: [".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff"]
+
+split:
+  train: 0.70
+  validation: 0.15
+  test: 0.15
+  random_seed: 42
+  prefer_subject_split: true
+
+training:
+  epochs: 30
+  batch_size: 32
+  learning_rate: 0.001
+  early_stopping_patience: 6
+  reduce_lr_patience: 3
+  reduce_lr_factor: 0.5
+  min_learning_rate: 0.000001
+
+landmarks:
+  model_path: "models/face_landmarker.task"
+  model_url: "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/latest/face_landmarker.task"
+  auto_download_model: true
+  min_face_detection_confidence: 0.50
+  min_face_presence_confidence: 0.50
+  min_tracking_confidence: 0.50
+  face_margin: 0.05
+  eye_roi_margin: 0.30
+  min_eye_height_ratio_to_width: 0.48
+  roi_ema_alpha: 0.65
+  roi_hold_frames: 4
+
+inference:
+  model_path: "models/cnn_basic.keras"
+  confidence_threshold: 0.60
+  single_eye_min_confidence: 0.85
+  allow_single_eye_fallback: true
+  closed_eye_duration_threshold: 1.5
+  prediction_history: 3
+  max_uncertain_frames: 2
+  uncertain_grace_period: 0.45
+  camera_source: 0
+  show_fps: true
+  sound_alert: false
+  sound_cooldown_seconds: 2.0
+  fallback_eye_roi_margin: 0.08
+  max_consecutive_read_failures: 30
+  enable_test_logging: false
+  test_scenario: "manual"
+  expected_state: ""
+  enable_yawn_detection: false
+
+debug:
+  enabled: true
+  save_uncertain_frames: true
+  save_low_confidence_frames: true
+  save_closed_samples: true
+  low_confidence_threshold: 0.70
+  min_interval_seconds: 0.75
+  max_saved_events: 150
+  output_path: "results/examples/debug"
