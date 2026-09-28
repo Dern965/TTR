@@ -1,0 +1,4 @@
+reason=uncertain
+state=UNCERTAIN
+confidence=0.000000
+roi_source=NONE

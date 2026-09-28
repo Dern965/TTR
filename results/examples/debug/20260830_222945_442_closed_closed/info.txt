@@ -1,0 +1,4 @@
+reason=closed
+state=CLOSED
+confidence=0.897788
+roi_source=LANDMARKS

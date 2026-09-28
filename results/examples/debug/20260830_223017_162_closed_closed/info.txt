@@ -1,0 +1,4 @@
+reason=closed
+state=CLOSED
+confidence=0.919753
+roi_source=FACE_GEOMETRY
