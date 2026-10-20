@@ -1,0 +1,4 @@
+reason=closed
+state=CLOSED
+confidence=0.895965
+roi_source=CACHE

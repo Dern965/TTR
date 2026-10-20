@@ -30,7 +30,7 @@ landmarks:
   min_tracking_confidence: 0.50
   face_margin: 0.05
   eye_roi_margin: 0.30
-  min_eye_height_ratio_to_width: 0.48
+  min_eye_height_ratio_to_width: 0.65
   roi_ema_alpha: 0.65
   roi_hold_frames: 4
 
@@ -41,7 +41,7 @@ inference:
   allow_single_eye_fallback: true
   closed_eye_duration_threshold: 1.5
   prediction_history: 3
-  max_uncertain_frames: 2
+  max_uncertain_frames: 0
   uncertain_grace_period: 0.45
   camera_source: 0
   show_fps: true

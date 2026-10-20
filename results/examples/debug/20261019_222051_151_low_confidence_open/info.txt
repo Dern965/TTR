@@ -1,0 +1,4 @@
+reason=low_confidence
+state=OPEN
+confidence=0.682640
+roi_source=LANDMARKS
