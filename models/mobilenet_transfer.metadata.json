@@ -1,0 +1,16 @@
+{
+  "model_name": "mobilenet_transfer",
+  "model_path": "models\\mobilenet_transfer.keras",
+  "class_names": [
+    "closed",
+    "open"
+  ],
+  "positive_class": "open",
+  "input_shape": [
+    64,
+    64,
+    3
+  ],
+  "architecture": "MobileNetV2 transfer learning with frozen ImageNet base",
+  "preprocessing_embedded_in_model": true
+}

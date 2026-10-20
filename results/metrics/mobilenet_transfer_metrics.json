@@ -1,0 +1,14 @@
+{
+  "model": "mobilenet_transfer",
+  "model_path": "C:\\Users\\dern9\\Desktop\\ttr_somnolencia\\models\\mobilenet_transfer.keras",
+  "accuracy": 0.8923144104803493,
+  "precision": 0.9718971712890445,
+  "recall": 0.8299630183334644,
+  "f1": 0.8953399541634836,
+  "test_samples": 22900,
+  "positive_class": "open",
+  "class_names": [
+    "closed",
+    "open"
+  ]
+}
